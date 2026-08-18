@@ -2,16 +2,17 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "myp-pokemon-radar",
   "main": "src/index.js",
-  "compatibility_date": "2026-08-01",
-  "kv_namespaces": [
-    { "binding": "RADAR_KV" }
+  "compatibility_date": "2026-08-18",
+  "d1_databases": [
+    { "binding": "DB" }
   ],
   "vars": {
     "TELEGRAM_CHAT_ID": "6620928053",
-    "LATEST_PAGES": "2",
-    "MAX_PRODUCTS_PER_SCAN": "10",
+    "LATEST_PAGES": "3",
+    "AUDIT_BATCH": "8",
     "SOLD_POINTS": "5",
     "ALERT_MIN_DISCOUNT": "0.20",
+    "INITIAL_ALERT_MIN_DISCOUNT": "0.30",
     "SALE_FEE_RATE": "0.07"
   },
   "triggers": {
