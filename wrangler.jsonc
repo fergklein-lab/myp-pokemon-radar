@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "myp-pokemon-radar",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-01",
+  "kv_namespaces": [
+    { "binding": "RADAR_KV" }
+  ],
+  "vars": {
+    "TELEGRAM_CHAT_ID": "6620928053",
+    "LATEST_PAGES": "2",
+    "MAX_PRODUCTS_PER_SCAN": "10",
+    "SOLD_POINTS": "5",
+    "ALERT_MIN_DISCOUNT": "0.20",
+    "SALE_FEE_RATE": "0.07"
+  },
+  "triggers": {
+    "crons": ["*/3 * * * *"]
+  }
+}
